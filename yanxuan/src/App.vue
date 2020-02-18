@@ -1,13 +1,15 @@
 <template>
   <div id="app">
-    <!-- <img src="./assets/logo.png"> -->
     <router-view/>
+    <FooterGuide/>
   </div>
 </template>
 
 <script>
+import FooterGuide from './components/FooterGuide/FooterGuide'
 export default {
-  name: 'App'
+  name: 'App',
+  components: {FooterGuide}
 }
 </script>
 
