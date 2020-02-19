@@ -1,5 +1,6 @@
 [
-	{
+	{	
+		"name": "推荐专区",
 		"categoryList": [
 				{
 						"showIndex": 0,
@@ -202,10 +203,10 @@
 						"subCateList": []
 				}
 		],
-		"name": "",
 		"id": 11
 	},
-	{
+	{	
+		"name": "宅家防护",
 		"categoryList": [
 				{
 						"showIndex": 0,
@@ -433,10 +434,10 @@
 						"subCateList": []
 				}
 		],
-		"name": "",
 		"id": 12
 	},
-	{
+	{	
+		"name": "爆品专区",
 		"categoryList": [
 				{
 						"showIndex": 0,
@@ -664,10 +665,10 @@
 						"subCateList": []
 				}
 		],
-		"name": "",
 		"id": 13
 	},
-	{
+	{	
+		"name": "新品专区",
 		"categoryList": [
 				{
 						"showIndex": 18,
@@ -4610,5 +4611,5 @@
 									"frontName": "韩国制造精巧好物"
 							}
 					]
-			}
+	}
 ]
