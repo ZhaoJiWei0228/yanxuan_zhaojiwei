@@ -44,6 +44,6 @@ export default [
   },
   {
     path: '/',
-    redirect: '/classifyList'
+    redirect: '/deserveBuy'
   }
 ]

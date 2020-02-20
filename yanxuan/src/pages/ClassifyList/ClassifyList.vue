@@ -8,17 +8,26 @@
                 </div>
             </div>        
         </div>
-        <GoodsListContents/>
+        <div class="bannerWrap">
+            <GoodsListContents/>
+            <SubCateList/>
+        </div>
+        
     </div>
 </template>
 
 <script>
     import BScroll from 'better-scroll'
     import GoodsListContents from '../../components/GoodsListContents/GoodsListContents'
+    import SubCateList from '../../components/SubCateList/SubCateList'
     export default {
         components:{
-            GoodsListContents
-        }
+            GoodsListContents,
+            SubCateList
+        },
+        methods: {
+            
+        },
     }
 </script>
 
@@ -62,4 +71,8 @@
                 .placeholder
                     line-height 56px
                     color #666
+    .bannerWrap
+        width 100%
+        height 1148px
+        display flex
 </style>
