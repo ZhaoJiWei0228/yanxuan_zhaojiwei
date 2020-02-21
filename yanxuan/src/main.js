@@ -5,13 +5,15 @@ import App from './App'
 import router from './router'
 import store from './store/index'
 import 'lib-flexible/flexible'
+import waterfall from 'vue-waterfall2'
 Vue.config.productionTip = false
 /* eslint-disable no-new */
+Vue.use(waterfall)
 new Vue({
   el: '#app',
   router,
   components: { App },
   template: '<App/>',
-  router,
-  store
+  store,
+  // waterfall
 })

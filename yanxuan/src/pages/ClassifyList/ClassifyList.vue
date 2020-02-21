@@ -2,7 +2,7 @@
     <div id="classifyList">
         <div class="headerWrap">
             <div class="search">
-                <div class="searchBtn">
+                <div class="searchBtn" @click="goToSearch">
                     <i class="icon iconfont icon-search1" ></i>
                     <span class="placeholder" >搜索商品, 共20259款好物</span>
                 </div>
@@ -26,7 +26,10 @@
             SubCateList
         },
         methods: {
-            
+            goToSearch(){
+                // console.log(this);
+                this.$router.push('/search')
+            }
         },
     }
 </script>

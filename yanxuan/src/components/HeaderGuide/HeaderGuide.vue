@@ -2,19 +2,39 @@
     <div id="headerGuide">
         <div class="wrap">
             <div class="left">
-                <i class="icon iconfont icon-index"></i>
+                <i class="icon iconfont icon-index" @click="goToIndex"></i>
             </div>
             <span class="center">值得买</span>
             <div class="right">
-                <i class="icon iconfont icon-search1"></i>
-                <i class="icon iconfont icon-cart"></i>
+                <i class="icon iconfont icon-search1" @click="goToSearch"></i>
+                <i class="icon iconfont icon-cart" @click="goToCart"></i>
             </div>
         </div>
     </div>
 </template>
 
 <script>
-    export default {}
+    export default {
+        data() {
+            return {
+                
+            }
+        },
+        methods: {
+            goToSearch(){
+                // console.log(this);
+                this.$router.push('/search')
+            },
+            goToIndex(){
+                // console.log(this);
+                this.$router.push('/index')
+            },
+            goToCart(){
+                // console.log(this);
+                this.$router.push('/cart')
+            }
+        },
+    }
 </script>
 
 <style lang="stylus" rel="stylesheet/stylus">
@@ -22,6 +42,11 @@
     width 100%
     height 100px
     position relative
+    position fixed
+    left 0
+    top 0
+    z-index 10
+    box-sizing border-box
     .wrap
         width 100%
         height 100px

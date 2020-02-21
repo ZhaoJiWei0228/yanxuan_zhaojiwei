@@ -3,7 +3,7 @@ import ClassifyList from '../pages/ClassifyList/ClassifyList'
 import DeserveBuy from '../pages/DeserveBuy/DeserveBuy'
 import Mine from '../pages/Mine/Mine'
 import Cart from '../pages/Cart/Cart'
-
+import Search from '../pages/Search/Search'
 
 export default [
   // {
@@ -40,7 +40,17 @@ export default [
   },
   {
     path: '/cart',
-    component: Cart
+    component: Cart,
+    meta: {
+      isShowFooter: true
+    }
+  },
+  {
+    path: '/search',
+    component: Search,
+    meta: {
+      isShowFooter: false
+    }
   },
   {
     path: '/',

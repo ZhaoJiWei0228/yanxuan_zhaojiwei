@@ -5,7 +5,7 @@
                 <div class="logoContainer">
                     <a href="" class="logo"></a>
                 </div>
-                <div class="search">
+                <div class="search" @click="goToSearch">
                     <div class="searchBtn">
                         <i class="icon iconfont icon-search1" ></i>
                         <span class="placeholder" >搜索商品, 共20259款好物</span>
@@ -306,6 +306,10 @@
                             this.Scroll.refresh()     // 重新计算 better-scroll，当 DOM 结构发生变化的时确保滚动效果正常
                         }
                     })
+                },
+                goToSearch(){
+                // console.log(this);
+                this.$router.push('/search')
                 }
         },
         mounted () {
