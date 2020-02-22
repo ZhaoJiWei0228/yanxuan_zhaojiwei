@@ -61,6 +61,7 @@
     .searchContent
       width 750px
       background-color #fff
+      height 100%
       .searchTop
         display flex
         width 750px

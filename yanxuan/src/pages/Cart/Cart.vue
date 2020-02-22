@@ -1,11 +1,16 @@
 <template>
     <div>
-        Cart 购物车组件
+        <HeaderGuideLogin/>
     </div>
 </template>
 
 <script>
-    export default {}
+    import HeaderGuideLogin from '../../components/HeaderGuideLogin/HeaderGuideLogin'
+    export default {
+        components:{
+            HeaderGuideLogin
+        }
+    }
 </script>
 
 <style lang="stylus" rel="stylesheet/stylus">

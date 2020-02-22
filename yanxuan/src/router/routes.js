@@ -4,7 +4,7 @@ import DeserveBuy from '../pages/DeserveBuy/DeserveBuy'
 import Mine from '../pages/Mine/Mine'
 import Cart from '../pages/Cart/Cart'
 import Search from '../pages/Search/Search'
-
+import Login from '../pages/Login/Login'
 export default [
   // {
   //   path: '路由路径',
@@ -53,7 +53,14 @@ export default [
     }
   },
   {
+    path: '/login',
+    component: Login,
+    meta: {
+      isShowFooter: false
+    }
+  },
+  {
     path: '/',
-    redirect: '/deserveBuy'
+    redirect: '/index'
   }
 ]

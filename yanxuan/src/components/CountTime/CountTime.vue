@@ -27,7 +27,7 @@ export default {
       var date = new Date()
       var now = date.getTime()
       //设置截止时间
-      var endDate = new Date('2020-2-21 23:59:59')
+      var endDate = new Date('2020-2-22 23:59:59')
       var end = endDate.getTime()
       //时间差
       var leftTime = end - now

@@ -11,7 +11,7 @@
                         <i class="icon iconfont icon-loginphone"></i>
                         <span>手机号快捷登录</span>
                     </div>
-                    <div class="btnBottom">
+                    <div class="btnBottom" @click="goToLogin">
                         <i class="icon iconfont icon-login_mail"></i>
                         <span>邮箱账号登录</span>
                     </div>
@@ -42,7 +42,12 @@
     export default {
         components:{
             HeaderGuideLogin
-        }
+        },
+        methods: {
+            goToLogin(){
+                this.$router.replace('/login')
+            }
+        },
     }
 </script>
 
